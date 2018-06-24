@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from copy import deepcopy # best_model_wts = copy.deepcopy(model.state_dict())
+from skimage import io, transform
+import pandas as pd
 
 # basic ops and data
 import torch
@@ -12,14 +15,21 @@ import torch.nn.functional as F
 
 # define loss function and optimizer
 import torch.optim as optim
-
-
+torch.optim.lr_scheduler
 
 # helpful
 torchvision.datasets.
 torchvision.transforms.
-torch.utils.data.
+torchvision.models.
+torch.utils.data. # Dataset, DataLoader
 torchvision.utils.make_grid()
 torch.device()
 
 
+# Ignore warnings
+import warnings
+warnings.filterwarnings("ignore")
+
+plt.ion()   # interactive mode
+
+%matplotlib notebook
