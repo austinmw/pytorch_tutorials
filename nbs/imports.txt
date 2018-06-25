@@ -19,8 +19,15 @@ torch.optim.lr_scheduler
 
 # helpful
 torchvision.datasets.
+    datasets.ImageFolder
 torchvision.transforms.
+    transforms.Compose([])
+    transforms.RandomSizedCrop
+    transforms.RandomHorizontalFlip
+    transforms.ToTensor
+    transforms.Normalize
 torchvision.models.
+    model.parameters
 torch.utils.data. # Dataset, DataLoader
 torchvision.utils.make_grid()
 torch.device()
@@ -33,3 +40,16 @@ warnings.filterwarnings("ignore")
 plt.ion()   # interactive mode
 
 %matplotlib notebook
+
+torch.manual_seed(1)
+torch.randn
+torch.zeros
+torch.view
+with torch.no_grad():
+
+
+model.zero_grad()
+loss = 
+loss.backward()
+optimizer.step()
+
